@@ -1,0 +1,10 @@
+[Unit]
+Description=Light
+
+[Service]
+ExecStart=/usr/bin/python3 -u toggle.py
+WorkingDirectory=/home/pirate
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
